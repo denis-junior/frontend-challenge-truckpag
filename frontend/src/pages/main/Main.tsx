@@ -25,7 +25,7 @@ export default function Main() {
 
   useEffect(() => {
     getMovies();
-  });
+  }, []);
 
   return (
     <div className="container">
