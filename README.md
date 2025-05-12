@@ -100,6 +100,7 @@ npm test
 
 # Ou com yarn
 yarn test
+```
 
 
 ## 🔗 API utilizada
