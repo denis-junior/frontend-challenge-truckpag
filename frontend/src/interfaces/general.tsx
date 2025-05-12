@@ -32,3 +32,8 @@ export interface IMovie {
   rating?: number;
   notes?: string;
 }
+
+export interface ICardMovieProps {
+  movie: IMovie;
+  search: string;
+}
