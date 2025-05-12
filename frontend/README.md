@@ -106,3 +106,6 @@ yarn test
 ## 🔗 API utilizada
 
 - [Studio Ghibli API](https://ghibliapi.vercel.app)
+
+## 🧪 Observação
+teste
