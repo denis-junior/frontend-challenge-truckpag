@@ -40,7 +40,6 @@ Aplicação desenvolvida com **React** e **TypeScript** para explorar os filmes 
    http://localhost:5173
    ```
 
-````
 
 ## 🚀 Tecnologias Utilizadas
 
@@ -107,5 +106,6 @@ yarn test
 
 - [Studio Ghibli API](https://ghibliapi.vercel.app)
 
-## ⛔ OBSERVAÇÃO
-- No desenvolvimento do projeto eu não troquei minha conta do git configurada em minha máquina, pois utilizo duas contas, essa do fork e uma conta chamada DENISAZIMUT que foi a conta por onde acabei fazendo os pushs no projeto do desafio. ambas as contas se tratam de mim mesmo porém estou explicando para não haver dúvidas a respeito, mas me encontro a disposição caso haja alguma.
+# ⛔ OBSERVAÇÃO
+
+No desenvolvimento do projeto eu não troquei minha conta do git configurada em minha máquina, pois utilizo duas contas, essa do fork e uma conta chamada DENISAZIMUT que foi a conta por onde acabei fazendo os pushs no projeto do desafio. ambas as contas se tratam de mim mesmo porém estou explicando para não haver dúvidas a respeito, mas me encontro a disposição caso haja alguma.
