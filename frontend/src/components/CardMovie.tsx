@@ -13,8 +13,9 @@ import NoteOutlinedIcon from "@mui/icons-material/NoteOutlined";
 import { GeneralContext } from "../context/GeneralContext";
 import Tooltip from "@mui/material/Tooltip";
 import "../App.css";
+import { ICardMovieProps } from "../interfaces/general";
 
-function CardMovie({ movie, search }: any) {
+function CardMovie({ movie, search }: ICardMovieProps) {
   const context = useContext(GeneralContext);
 
   if (!context) {
@@ -28,7 +29,7 @@ function CardMovie({ movie, search }: any) {
     accountSession,
     movieRatingExists,
     movieRatingTotalStars,
-    includeSynopsis
+    includeSynopsis,
   } = context;
 
   return (
@@ -103,7 +104,8 @@ function CardMovie({ movie, search }: any) {
             </Tooltip>
 
             <Card.Text style={{ color: "gray" }}>
-              {movie.release_date} • {formatMinutesToHours(movie.running_time)}
+              {movie.release_date} •{" "}
+              {formatMinutesToHours(Number(movie.running_time))}
             </Card.Text>
             <div className="d-flex align-items-center">
               <div className="d-flex align-items-center justify-content-between w-100">
@@ -130,7 +132,11 @@ function CardMovie({ movie, search }: any) {
               </div>
             </div>
             <div>
-              <ExpandableText includeSynopsis={includeSynopsis} text={movie.description} maxChars={150} />
+              <ExpandableText
+                includeSynopsis={includeSynopsis}
+                text={movie.description}
+                maxChars={150}
+              />
             </div>
             <div
               className="m-0 p-0"
@@ -159,7 +165,7 @@ function CardMovie({ movie, search }: any) {
                     >
                       <NoteIcon style={{ width: "1.3rem" }} /> Your Notes:
                     </p>
-                    <p >{accountSession.notes[movie.id].notes}</p>
+                    <p>{accountSession.notes[movie.id].notes}</p>
                   </span>
                 )}
               </p>
